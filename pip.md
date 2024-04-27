@@ -1,3 +1,5 @@
+[README.md](README.md)
+
 ## Installing Packages
 
 ### Install from a git repo
