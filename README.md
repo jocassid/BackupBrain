@@ -3,3 +3,4 @@ A collection of markdown files containing reference info on various technical to
 
 ## Python
 - [pip](pip.md)
+- [pylint](pylint.md)
