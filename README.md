@@ -5,3 +5,8 @@ A collection of markdown files containing reference info on various technical to
 - [pip](pip.md)
 - [PyCharm](PyCharm.md)
 - [pylint](pylint.md)
+
+## TypeScript
+- [TypeScript](TypeScript.md)
+
+
