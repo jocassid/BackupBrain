@@ -6,7 +6,8 @@ A collection of markdown files containing reference info on various technical to
 - [PyCharm](PyCharm.md)
 - [pylint](pylint.md)
 
-## TypeScript
+## Angular & TypeScript
+- [Angular](Angular.md)
 - [TypeScript](TypeScript.md)
 
 
