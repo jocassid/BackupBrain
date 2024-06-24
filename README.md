@@ -16,3 +16,6 @@ A collection of markdown files containing reference info on various technical to
 
 ## Linux
 - [find](find.md)
+
+## Windows
+- [PowerShell](PowerShell.md)

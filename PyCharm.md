@@ -1,5 +1,7 @@
 [README.md](README.md)
 
+# PyCharm
+
 ## Inspections
 
 Note: PyCharm seems to implement it's own linter instead of using [pylint](pylint.md).
