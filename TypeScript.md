@@ -1,14 +1,16 @@
 [README.md](README.md)
 
-## YouTubers, Bloggers, etc
+## TypeScript
 
-### Matt Pocock
+### YouTubers, Bloggers, etc
+
+#### Matt Pocock
 
 - [https://www.youtube.com/@mattpocockuk](https://www.youtube.com/@mattpocockuk)
 - [https://www.totaltypescript.com/](https://www.totaltypescript.com/)
 
 
-## variable annotations (find actual term for this)
+### variable annotations (find actual term for this)
 
 ```typescript
 let a?: number;     // ? indicates a is an optional (may be null or undefined)
@@ -16,7 +18,7 @@ let b!: number;     // ! Non-null assertion.  Tells that value won't be null or 
 ```
 
 
-## Constructor Shorthand
+### Constructor Shorthand
 
 This ...
 ```typescript
@@ -42,7 +44,7 @@ class Point {
 }
 ```
 
-### Properties
+#### Properties
 
 ```typescript
 class Point {
