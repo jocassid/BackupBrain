@@ -2,6 +2,16 @@
 
 ## PowerShell
 
+### Get/Set Environment Variable
+
+To get an environment value
+
+`$p = $env:path`
+
+To set environment value
+
+`$env:foo = 'bar'`
+
 ### Generating hash of file
 
 `Get-FileHash SOME_FILE`
