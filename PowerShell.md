@@ -1,8 +1,8 @@
 [README.md](README.md)
 
-## PowerShell
+# PowerShell
 
-### Get/Set Environment Variable
+## Get/Set Environment Variable
 
 To get an environment value
 
@@ -12,7 +12,7 @@ To set environment value
 
 `$env:foo = 'bar'`
 
-### Generating hash of file
+## Generating hash of file
 
 `Get-FileHash SOME_FILE`
 

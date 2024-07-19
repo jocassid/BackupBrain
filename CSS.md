@@ -1,8 +1,8 @@
 [README.md](README.md)
 
-## CSS
+# CSS
 
-### `:nth-of-type` and other Tree-structured psuedo-classes
+## `:nth-of-type` and other Tree-structured psuedo-classes
 
 [https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#tree-structural_pseudo-classes)
 
