@@ -1,6 +1,8 @@
 [README.md](README.md)
 
-### Directive or what?
+# Angular
+
+## Directive or what?
 
 | Type           | Examples                           | Used For                            |
 |----------------|------------------------------------|-------------------------------------|
