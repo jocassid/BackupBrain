@@ -7,6 +7,7 @@ A collection of markdown files containing reference info on various technical to
 - [pip](pip.md)
 - [PyCharm](PyCharm.md)
 - [pylint](pylint.md)
+- [Miscellaneous Python](MiscPython.md)
 
 ## Angular & TypeScript
 - [Angular](Angular.md)
@@ -26,5 +27,8 @@ A collection of markdown files containing reference info on various technical to
 
 ## Databases
 - [PostgreSQL](PostgreSQL.md)
+
+## Development Tools
+- [git](git.md)
 
 
