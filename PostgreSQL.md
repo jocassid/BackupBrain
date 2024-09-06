@@ -2,6 +2,15 @@
 
 # PostgreSQL
 
+## \ Shorthands
+
+| Shortcut   | Description              |
+|------------|--------------------------|
+| `\d TABLE` | Describe TABLE           |
+| `\dt`      | List tables in database  |
+| `\du`      | List users on server     |
+| `\l`       | List databases in server |
+
 ## Determining version of PostgreSQL
 
 From shell:
@@ -11,6 +20,14 @@ From shell:
 From within psql:
 
 `SELECT version();`
+
+## See what queries are running
+
+```SELECT pid AS process_id,
+query AS active_query
+FROM pg_stat_activity
+WHERE state = 'active';
+```
 
 ## Running Multiple Versions of PostgresSQL
 
@@ -62,3 +79,9 @@ Change database owner
 Change ownership of everything in the database
 
 `sudo -u postgres psql -d my_db -c "REASSIGN OWNED BY django TO my_user"`
+
+## Manage Roles
+
+### Change role password
+
+`ALTER ROLE super WITH PASSWORD 'secret123';`
