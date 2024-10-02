@@ -24,6 +24,7 @@ A collection of markdown files containing reference info on various technical to
 - [find](find.md)
 
 ## Windows
+- [Windows](Windows.md)
 - [PowerShell](PowerShell.md)
 
 ## Databases
