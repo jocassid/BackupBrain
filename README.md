@@ -3,11 +3,13 @@ A collection of markdown files containing reference info on various technical to
 
 ## Python
 - [Django](Django.md)
+- [Django REST Framework](DjangoRestFramework.md)
 - [Django and HTMX](DjangoAndHTMX.md)
 - [pip](pip.md)
 - [PyCharm](PyCharm.md)
 - [pylint](pylint.md)
 - [Logging](python_logging.md)
+- [Miscellaneous Python](MiscPython.md)
 
 ## Angular & TypeScript
 - [Angular](Angular.md)
@@ -23,9 +25,13 @@ A collection of markdown files containing reference info on various technical to
 - [find](find.md)
 
 ## Windows
+- [Windows](Windows.md)
 - [PowerShell](PowerShell.md)
 
 ## Databases
 - [PostgreSQL](PostgreSQL.md)
+
+## Development Tools
+- [git](git.md)
 
 
