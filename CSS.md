@@ -50,4 +50,25 @@ Results in a div with contents looking like: ▲Add Glyphs around here▼
 or by doing a CTRL + a .  However, it does let you do a RIGHT-CLICK > Inspect
 on the glyph.  I'm not sure if other browsers let you do this.
 
+## Grid Layout Cheat Sheet
+
+grid-template-columns: 1fr 1fr 1fr;
+
+grid-template-columns: repeat(3, 1fr);
+
+grid-column: 1 / 4;
+
+grid-row: 1 / 3;
+
+column-gap: 10px;
+
+row-gap: 1em;
+
+gap: 1rem;
+
+grid-area: [ROW_START] [COL_START] [ROW_END] [COL_END]
+
+
+
+
 

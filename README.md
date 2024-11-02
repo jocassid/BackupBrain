@@ -18,11 +18,16 @@ A collection of markdown files containing reference info on various technical to
 ## HTML and CSS
 - [CSS](CSS.md)
 
+## JavaScript
+- [JavaScript](JavaScript.md)
+
 ## Frontend Frameworks
 - [HTMX](HTMX.md)
 
 ## Linux
 - [find](find.md)
+- [ps](ps.md)
+- [top](top.md)
 
 ## Windows
 - [Windows](Windows.md)
