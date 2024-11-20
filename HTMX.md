@@ -1,3 +1,3 @@
 [README.md](README.md)
 
-# HTMX
+# [HTMX](https://htmx.org)
