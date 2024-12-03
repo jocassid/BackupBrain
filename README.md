@@ -11,6 +11,10 @@ A collection of markdown files containing reference info on various technical to
 - [Logging](python_logging.md)
 - [Miscellaneous Python](MiscPython.md)
 
+### Standard Library
+
+- [urllib](urllib.md)
+
 ## Angular & TypeScript
 - [Angular](Angular.md)
 - [TypeScript](TypeScript.md)

@@ -2,10 +2,19 @@
 
 # CSS
 
+## Attribute Selectors
+
+```css
+a[title]{}                /* has title attribute */
+input[type="text"]{}      /* type attribute is "text" */
+a[href*="github.com"]{}   /* href attributes contains github.com */
+a[href$=".org"]{}         /* href ends-with .org.  NOT case-sensitive */ 
+a[class~="logo"]{}        /* class contains word logo */
+```
+
 ## `:nth-of-type` and other Tree-structured psuedo-classes
 
 [https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#tree-structural_pseudo-classes)
-
 
 ```css
 tr:nth-of-type(3){}
