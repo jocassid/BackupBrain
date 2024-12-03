@@ -20,6 +20,14 @@
 | `'foo' in t`        | `t.includes('foo')` |                                                                     |
 | `"".join([1,2,3])`  | `[1,2,3].join('')`  | If no argument is passed to Array.join, values are joined by commas |
 
+## Array Methods
+
+| Python               | JavaScript               | Notes                                                                               |
+|----------------------|--------------------------|-------------------------------------------------------------------------------------|
+| `[1, 2, 3].index(2)` | `[1, 2, 3].indexOf(2)`   | JavaScript version returns -1 if value not found.  Python version raises ValueError |
+| `2 in [1, 2, 3]`     | `[1, 2, 3].includes(2)`  |                                                                                     |
+
+
 ## Object Methods
 
 The following object is used in these examples `obj = {'a': 'alpha', b: 'bravo}`

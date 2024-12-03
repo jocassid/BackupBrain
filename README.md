@@ -18,17 +18,20 @@ A collection of markdown files containing reference info on various technical to
 ## Angular & TypeScript
 - [Angular](Angular.md)
 - [TypeScript](TypeScript.md)
+- [ESLint](ESLint.md)
 
 ## HTML and CSS
 - [CSS](CSS.md)
 
 ## JavaScript
 - [JavaScript](JavaScript.md)
+- [ESLint](ESLint.md)
 
 ## Frontend Frameworks
 - [HTMX](HTMX.md)
 
 ## Linux
+- [BASH](BASH.md)
 - [find](find.md)
 - [ps](ps.md)
 - [top](top.md)
