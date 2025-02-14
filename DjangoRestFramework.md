@@ -19,4 +19,9 @@ response = MyView().post(request)
 request = factory.post('/')
 request.data = {'foo': 'bar'}
 response = MyView().post(request)
+
+# Or this (dispatch converts Django HttpRequest into DRF Request)
+request = factory.post('/', {'foo': 'bar'}, format='json')
+response = MyView().dispatch(request)
+
 ```
