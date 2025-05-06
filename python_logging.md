@@ -1,4 +1,4 @@
-[README.md](README.md)
+ [README.md](README.md)
 
 ## Logging in Python
 
@@ -17,7 +17,7 @@ def main():
 
 if __name__ == '__main__':
     basicConfig(
-        format=""
+        format="",
         filename='pip_viz.log',
         level=DEBUG,
     )

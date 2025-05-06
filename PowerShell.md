@@ -2,7 +2,9 @@
 
 # PowerShell
 
-## Get/Set Environment Variable
+## Using PowerShell
+
+### Get/Set Environment Variable
 
 To get an environment value
 
@@ -12,7 +14,7 @@ To set environment value
 
 `$env:foo = 'bar'`
 
-## Generating hash of file
+### Generating hash of file
 
 `Get-FileHash SOME_FILE`
 
@@ -23,7 +25,21 @@ generate, use the `-Algorithm` option.
 
 Note: that there is only 1 hyphen in `Get-FileHash`
 
-## Search for a file
+### Search for a file
 
 `Get-Childitem –Path C:\ -Include *HSG* -File -Recurse -ErrorAction SilentlyContinue`
+
+## Programming Powershell
+
+### Built-In variables
+
+| Variables         | Description                                 |
+|-------------------|---------------------------------------------|
+| `$PSVersionTable` | Contains a table of PowerShell version info |
+
+### Hashtables
+
+```PowerShell
+$
+```
 

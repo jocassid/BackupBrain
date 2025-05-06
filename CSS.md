@@ -61,23 +61,47 @@ on the glyph.  I'm not sure if other browsers let you do this.
 
 ## Grid Layout Cheat Sheet
 
+```css
+display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-
 grid-template-columns: repeat(3, 1fr);
-
-grid-column: 1 / 4;
-
-grid-row: 1 / 3;
-
+grid-column: 1 / 4;  /* start at column 1 end before column 4 */
+grid-row: 1 / 3; /* 1 <= row < 3 */
 column-gap: 10px;
-
 row-gap: 1em;
-
 gap: 1rem;
-
 grid-area: [ROW_START] [COL_START] [ROW_END] [COL_END]
+```
 
+## Flexbox Layout Cheat Sheet
 
+```css
+display: flex;
+flex-direction: row; /* alternately: column, row-reverse, or row-reverse */
+/* use margins of elements in flexbox to space items a specific distance 
+   apart.  There's properties for spacing out items across the flexbox */
+```
 
+## Specificity
+
+Specificity is three numbers written as `1.2.3`.  This the meaning of this specificity is:
+
+| 1             | 2                                    | 3                                      |
+|---------------|--------------------------------------|----------------------------------------|
+| Number of IDs | Number of classes (& pseudo-classes) | Number of elements (& pseudo-elements) |
+
+In this example the border is applied with a specificity of `1.2.3`
+
+```css
+#orderForm{
+    & div.shippingInfo{
+        & div.address{
+            & textarea{
+                border: solid fuchsia 1rem;
+            }            
+        }
+    }
+}
+```
 
 
