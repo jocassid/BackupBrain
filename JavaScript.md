@@ -55,6 +55,7 @@ function py_bool(value){
 Values used in these examples:
 ```javascript
 a = [1, 2, 3];
+b = [4, 5, 6];
 ```
 
 | Python            | JavaScript           | Notes                                                                                                                                                                                                                                                  |
@@ -63,6 +64,8 @@ a = [1, 2, 3];
 | `2 in a`          | `a.includes(2)`      |                                                                                                                                                                                                                                                        |
 | `a.append(4)`     | `a.push(4)`          |                                                                                                                                                                                                                                                        | 
 | `a.insert(0, 10)` | `a.splice(0, 0, 10)` | In Python, splice would be defined `def splice(start, deleteCount, *items)`.<br/>`deleteCount` is the number of elements to remove.  Splice is wierd see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice |
+| `a + b`           | `a.concat(b)`        | `concat` returns a new Array, a is not altered                                                                                                                                                                                                         |
+| `len(a)`          | `a.length`           |                                                                                                                                                                                                                                                        |
 
 
 ## Object Methods
@@ -84,10 +87,15 @@ a = new Set([1, 2]);
 b = new Set([2, 3]);
 ```
 
-| Python     | JavaScript    | Notes                                                                |
-|------------|---------------|----------------------------------------------------------------------|
-| `a.pop(1)` | `a.delete(1)` | JavaScript version returns true if item was present, false otherwise |
+| Python     | JavaScript          | Notes                                                                     |
+|------------|---------------------|---------------------------------------------------------------------------|
+| `a.pop(1)` | `a.delete(1)`       | JavaScript version returns true if item was present, false otherwise      |
+| `a - b`    | `a.difference(b)`   | `difference`, `intersection`, `union`, etc where newly available in 2024  |
+| `a & b`    | `a.intersection(b)` |                                                                           |
+| `a \| b`   | `a.union(b)`        |                                                                           |
+| `len(a)`   | `a.size`            |                                                                           |
 
+* There is no join method to create a string from the elements in the Set
 
 ## Comprehension Equivalents
 

@@ -14,12 +14,13 @@ An inspection may be disabled for a statement, method/function, or class using a
 
 #### Selected Inspection Codes 
 
-| INSPECTION_CODE       | Description                                               |
-|-----------------------|-----------------------------------------------------------|
-| `PyMethodMayBeStatic` | Disable "method may be static" inspection for this method |
-| `PyBroadException`    | For when you want to `except Exception`                   |
-| `PyTypeChecker`       | Disable "Incorrect type" inspection.  i.e. using the wrong type of argument in a call. |
-| `PyUnusedLocal`       | Unused local also "Parameter [param] value is not used |
+| INSPECTION_CODE          | Description                                                                                                  |
+|--------------------------|--------------------------------------------------------------------------------------------------------------|
+| `PyMethodMayBeStatic`    | Disable "method may be static" inspection for this method                                                    |
+| `PyBroadException`       | For when you want to `except Exception`                                                                      |
+| `PyTypeChecker`          | Disable "Incorrect type" inspection.  i.e. using the wrong type of argument in a call.                       |
+| `PyUnresolvedReferences` | This crops up when defining fields of DRF serializer when field is related name or field added by Django ORM |
+| `PyUnusedLocal`          | Unused local also "Parameter [param] value is not used                                                       |
 
 A list of these inspection codes is available at [https://gist.github.com/pylover/7870c235867cf22817ac5b096defb768](https://gist.github.com/pylover/7870c235867cf22817ac5b096defb768)
 

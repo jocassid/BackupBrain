@@ -9,6 +9,7 @@ For pages that you don't want in git use a `private` folder with a
 - [Django](Django.md)
 - [Django REST Framework](DjangoRestFramework.md)
 - [Django and HTMX](DjangoAndHTMX.md)
+- [openpyxl](openpyxl.md)
 - [pip](pip.md)
 - [PyCharm](PyCharm.md)
 - [pylint](pylint.md)
@@ -41,7 +42,10 @@ For pages that you don't want in git use a `private` folder with a
 ## Linux
 - [BASH](BASH.md)
 - [find](find.md)
+- [grep](grep.md)
 - [ps](ps.md)
+- [ssh/sftp](ssh_sftp.md)
+- [su/sudo](su_sudo.md)
 - [top](top.md)
 
 ## Windows
@@ -57,5 +61,9 @@ For pages that you don't want in git use a `private` folder with a
 
 ## Markdown
 - [MediaWiki](MediaWiki.md)
+- [Git-Flavored Markdown](git_flavored_markdown.md)
+
+## Microsoft Office
+- [Excel](Excel.md)
 
 
