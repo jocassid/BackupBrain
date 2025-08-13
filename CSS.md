@@ -2,6 +2,13 @@
 
 # CSS
 
+## Units of Measure
+
+| Unit                         | Definition                                                                           |
+|------------------------------|--------------------------------------------------------------------------------------|
+| `vh`                         | viewport height 50vh is 50% the height of the viewport (NOT TOTAL HEIGHT OF DOCUMENT |
+| `vw`                         | viewport width 25vw is 25% the height of the viewport                                | |
+
 ## Attribute Selectors
 
 ```css

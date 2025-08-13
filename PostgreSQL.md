@@ -4,12 +4,14 @@
 
 ## \ Shorthands
 
-| Shortcut   | Description              |
-|------------|--------------------------|
-| `\d TABLE` | Describe TABLE           |
-| `\dt`      | List tables in database  |
-| `\du`      | List users on server     |
-| `\l`       | List databases in server |
+| Shortcut      | Description              |
+|---------------|--------------------------|
+| `\c DATABASE` | `use` DATABASE           |
+| `\d TABLE`    | Describe TABLE           |
+| `\dt`         | List tables in database  |
+| `\du`         | List users on server     |
+| `\l`          | List databases in server |
+| `\q`          | Quit `psql`              |
 
 ## Determining version of PostgreSQL
 
