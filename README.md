@@ -41,12 +41,15 @@ For pages that you don't want in git use a `private` folder with a
 
 ## Linux
 - [BASH](BASH.md)
+- [Docker](Docker.md)
 - [find](find.md)
 - [grep](grep.md)
 - [ps](ps.md)
 - [ssh/sftp](ssh_sftp.md)
 - [su/sudo](su_sudo.md)
 - [top](top.md)
+- [systemctl](systemctl.md)
+- [logs](linux_logs.md)
 
 ## Windows
 - [Windows](Windows.md)
