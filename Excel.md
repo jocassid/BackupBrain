@@ -23,3 +23,4 @@ Yes
 |-----------------------------|---------------------|-------------------------|
 | select entire row           | \<SHIFT> + \<SPACE> | Yes                     | 
 | enter a cell using keyboard | \<CTRL> + \<ENTER>  | No                      |
+| show/hide ribbon            | \<CTRL> + \<F1>     |                         |
