@@ -37,6 +37,16 @@ Note: that there is only 1 hyphen in `Get-FileHash`
 |-------------------|---------------------------------------------|
 | `$PSVersionTable` | Contains a table of PowerShell version info |
 
+### Comparison Operators
+
+| Operator  | Description                                                                 |
+|-----------|-----------------------------------------------------------------------------|
+| `-eq`     | equality operator                                                           |
+| `-ne`     | inequality operator                                                         |
+| `-match`  | Match regex (not case-sensitive)                                            |
+| `-cmatch` | Match regex (case-sensitive)                                                |
+| `-like`   | I'm not sure what this does exactly.  Takes a regex arg, not case-sensitive |
+
 ### Hashtables
 
 ```PowerShell

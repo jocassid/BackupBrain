@@ -10,6 +10,7 @@ For pages that you don't want in git use a `private` folder with a
 - [Django REST Framework](DjangoRestFramework.md)
 - [Django and HTMX](DjangoAndHTMX.md)
 - [openpyxl](openpyxl.md)
+- [Pandas](Pandas.md)
 - [pip](pip.md)
 - [PyCharm](PyCharm.md)
 - [pylint](pylint.md)
@@ -46,6 +47,7 @@ For pages that you don't want in git use a `private` folder with a
 - [ps](ps.md)
 - [ssh/sftp](ssh_sftp.md)
 - [su/sudo](su_sudo.md)
+- [systemctl](systemctl.md)
 - [top](top.md)
 
 ## Windows
