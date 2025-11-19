@@ -8,4 +8,8 @@
 - [PDM](https://pdm-project.org/en/latest/)
 - [poetry](https://python-poetry.org/)
 - [conda](https://docs.conda.io/en/latest/)
+- [uv](https://docs.astral.sh/uv/)
+- [pipx](https://pipx.pypa.io/latest/)
+
+Note: The default `conda` package repository requires a license for commercial use.
 
