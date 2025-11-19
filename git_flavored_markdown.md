@@ -49,5 +49,6 @@ the HTML version I need to use a `<code>` element.
 
 ## Resources
 
+* https://www.markdownlang.com
 * [https://markdowncheatsheet.com](https://markdowncheatsheet.com/reference)
 * [Advanced Markdown Tables: Complete Guide to Formatting, Styling, and Enhanced Features](https://blog.markdowntools.com/posts/markdown-tables-advanced-features-and-styling-guide)
