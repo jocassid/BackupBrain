@@ -16,3 +16,8 @@ brackets surround indexes into lists.
 Example:
 
 `sudo docker inspect | jq ".[0].Config.Env`
+
+
+Example raw output (don't quote strings)
+
+`docker image lss --format json | jq -r ".ID"` 
