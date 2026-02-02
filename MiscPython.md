@@ -22,6 +22,9 @@ toronto_or_montreal_dt = datetime(2025, 12, 25, tzinfo=ZoneInfo('America/Toronto
 - [conda](https://docs.conda.io/en/latest/)
 - [uv](https://docs.astral.sh/uv/)
 
+Note: The default `conda` package repository requires a license for commercial use.
+
+
 ## Programatically Get Line number
 
 ```python
@@ -31,6 +34,3 @@ def get_line_number():
     cf = currentframe()
     return cf.f_back.f_lineno
 ```
-
-
-

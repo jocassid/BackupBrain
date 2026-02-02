@@ -40,11 +40,13 @@ For pages that you don't want in git use a `private` folder with a
 - [node](node.md)
 - [nvm/fnm](nvm-fnm.md)
 - [npm](npm.md)
+- [jq](jq.md)
 
 ## Frontend Frameworks
 - [HTMX](HTMX.md)
 
 ## Linux
+- [Alpine,ash,apk](Alpine.md)
 - [BASH](BASH.md)
 - [Docker](Docker.md)
 - [find](find.md)
