@@ -19,8 +19,9 @@ Yes
 
 ## Shortcuts
 
-| To ...                      | Shortcut            | Works in Online Version |
-|-----------------------------|---------------------|-------------------------|
-| select entire row           | \<SHIFT> + \<SPACE> | Yes                     | 
-| enter a cell using keyboard | \<CTRL> + \<ENTER>  | No                      |
-| show/hide ribbon            | \<CTRL> + \<F1>     |                         |
+| To ...                      | Shortcut               | Works in Online Version              |
+|-----------------------------|------------------------|--------------------------------------|
+| select entire row           | \<SHIFT> + \<SPACE>    | Yes                                  | 
+| enter a cell using keyboard | \<CTRL> + \<ENTER>     | No                                   |
+| show/hide ribbon            | \<CTRL> + \<F1>        |                                      |
+| Insert table row above      | \<CTRL> + \<SHIFT> + = | Works online, not sure about desktop |

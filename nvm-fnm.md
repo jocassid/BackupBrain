@@ -2,7 +2,7 @@
 
 # nvm / fnm
 
-Node Version Manager / Fast Node Manager.  Fast Node Manager is a Windows app 
+[Node Version Manager](https://github.com/nvm-sh/nvm) / [Fast Node Manager](https://github.com/Schniz/fnm).  Fast Node Manager is a Windows app 
 for managing node versions.
 
 | Action               | nvm                                                                                    | fnm                             |
