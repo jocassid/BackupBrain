@@ -29,6 +29,30 @@ Note: that there is only 1 hyphen in `Get-FileHash`
 
 `Get-Childitem –Path C:\ -Include *HSG* -File -Recurse -ErrorAction SilentlyContinue`
 
+### Equivalent to Unix `cat` command
+
+Use Get-Content and pipe it into Set-Content or Add-Content.
+```PowerShell
+# Concatenate two files into a new file
+Get-Content file1.txt, file2.txt | Set-Content combined.txt
+
+# Append multiple files into an existing file
+Get-Content file1.txt, file2.txt, file3.txt | Add-Content combined.txt
+
+# Preserve raw text (don’t split into lines)
+Get-Content file1.txt, file2.txt -Raw | Set-Content combined.txt
+
+# concatenation of files to stdout
+Get-Content file1.txt, file2.txt
+```
+
+## Cmdlets of Note
+
+| Cmdlet                                                          | Description                       |
+|-----------------------------------------------------------------|-----------------------------------|
+| [Select-String](https://go.microsoft.com/fwlink/?LinkID=113388) | Search for strings within file(s) |
+
+
 ## Programming Powershell
 
 ### Built-In variables

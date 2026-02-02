@@ -46,6 +46,7 @@ function py_bool(value){
 |---------------------|---------------------|---------------------------------------------------------------------|
 | `t[3]`              | `t.charAt(3)`       | Doesn't support negative indices                                    |
 | `t[-1]`             | `t.at(-1)`          | Like charAt, but supports negative indices                          |
+| `t.lower()`         | `t.toLowerCase()`   |
 | `t.endswith('foo')` | `t.endsWith('foo')` |                                                                     |  
 | `'foo' in t`        | `t.includes('foo')` |                                                                     |
 | `"".join([1,2,3])`  | `[1,2,3].join('')`  | If no argument is passed to Array.join, values are joined by commas |
@@ -119,4 +120,35 @@ from datetime import datetime, date, time, timedelta
 |----------------------------------------------|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `date(2025, 2, 2)`                           | `Date(2025, 1, 2)`            | Month is specified using a `monthIndex` (i.e. January is 0)                                                                                                    |
 | `datetime.strptime('2025-02-02', '%Y-%m-%d)` | `Date('2025-02-02T00:00:00')` | The `'T00:00:00'` is required.  `'2025-02-02'` is not a valid date string.  If you pass an invalid date, the value returned is just the current date and time. |
+
+## Regular Expression
+
+<table>
+    <thead>
+        <tr>
+            <th>Python</th>
+            <th>JavaScript</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <code>p = re.compile(r'ab+c')</code>
+            </td>
+            <td>
+                <code>const p = /ab+c/;</code><br/>
+                <code>const p = new RegExp("ab+c");</code>
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
 

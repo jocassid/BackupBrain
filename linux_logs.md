@@ -5,7 +5,7 @@
 ## Log locations
 
 * Most logs are in `/var/log`
-* Also some in '/var/run'
+* Some in '/var/run'
 * A lot are plain text files 
 
 
@@ -17,3 +17,13 @@
 | `Xorg.0.log`            | X Server logs                                            |
 | `wtmp.log` / `last.log` | Contains log-in data                                     |
 | `btmp.log`              | Shows failed log-in attempts                             |
+
+## Creating a Log message from command line
+
+Use the `logger` command.
+
+`logger "Test message"`
+
+To specify priority using `FACILITY.LEVEL` pair
+
+`logger -p auth.info "Test auth log"`

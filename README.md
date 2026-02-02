@@ -9,17 +9,21 @@ For pages that you don't want in git use a `private` folder with a
 - [Django](Django.md)
 - [Django REST Framework](DjangoRestFramework.md)
 - [Django and HTMX](DjangoAndHTMX.md)
+- [Jupyter](Jupyter.md)
+- [Networking](linux_networking.md)
 - [openpyxl](openpyxl.md)
 - [Pandas](Pandas.md)
 - [pip](pip.md)
 - [PyCharm](PyCharm.md)
 - [pylint](pylint.md)
 - [pytest](pytest.md)
-- [Logging](python_logging.md)
+- [sqlglot](sqlglot.md)
 - [Miscellaneous Python](MiscPython.md)
 
-### Standard Library
 
+### Python Standard Library
+- [Logging](python_logging.md)
+- [unittest.mock](python_unittest_mock.md)
 - [urllib](urllib.md)
 
 ## Angular & TypeScript
@@ -47,16 +51,18 @@ For pages that you don't want in git use a `private` folder with a
 - [Docker](Docker.md)
 - [find](find.md)
 - [grep](grep.md)
+- [logs](linux_logs.md)
+- [openssl](openssl.md)
 - [ps](ps.md)
 - [ssh/sftp](ssh_sftp.md)
 - [su/sudo](su_sudo.md)
 - [systemctl](systemctl.md)
 - [top](top.md)
-- [systemctl](systemctl.md)
-- [logs](linux_logs.md)
+
 
 ## Windows
 - [Windows](Windows.md)
+- [Networking](windows_networking.md)
 - [PowerShell](PowerShell.md)
 - [winget](winget.md)
 
@@ -72,5 +78,6 @@ For pages that you don't want in git use a `private` folder with a
 
 ## Microsoft Office
 - [Excel](Excel.md)
+- [Outlook](Outlook.md)
 
 
