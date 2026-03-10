@@ -68,6 +68,7 @@ For pages that you don't want in git use a `private` folder with a
 
 ## Databases
 - [PostgreSQL](PostgreSQL.md)
+- [SQLite](SQLite.md)
 
 ## Development Tools
 - [git](git.md)
