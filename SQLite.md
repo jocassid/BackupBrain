@@ -18,4 +18,4 @@
 
 ## List table columns
 
-`RAGMA table_info(my_table)`
+`PRAGMA table_info(my_table)`
