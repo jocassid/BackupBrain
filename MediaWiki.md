@@ -33,3 +33,21 @@ From [https://www.mediawiki.org/wiki/Help:Tables](https://www.mediawiki.org/wiki
 |Yogurt
 |}
 ```
+
+The resulting table
+<table>
+    <tr><th colspan="6">Shopping List</th></tr>
+    <tr>
+        <td rowspan="2">Bread & Butter</td>
+        <td>Pie</td>
+        <td>Buns</td>
+        <td>Danish</td>
+        <td colspan="2">Croissant</td>
+    </tr>
+    <tr>
+        <td>Cheese</td>
+        <td colspan="2">Ice cream</td>
+        <td>Butter</td>
+        <td>Yogurt</td>
+    </tr>
+</table>
