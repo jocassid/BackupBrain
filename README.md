@@ -22,6 +22,7 @@ For pages that you don't want in git use a `private` folder with a
 
 
 ### Python Standard Library
+- [io](python_io.md)
 - [Logging](python_logging.md)
 - [unittest.mock](python_unittest_mock.md)
 - [urllib](urllib.md)
@@ -52,12 +53,15 @@ For pages that you don't want in git use a `private` folder with a
 - [find](find.md)
 - [grep](grep.md)
 - [logs](linux_logs.md)
+- [mail](linux_mail.md)
 - [openssl](openssl.md)
 - [ps](ps.md)
 - [ssh/sftp](ssh_sftp.md)
 - [su/sudo](su_sudo.md)
 - [systemctl](systemctl.md)
+- [tar](tar.md)
 - [top](top.md)
+- [vim](vim.md)
 
 
 ## Windows
@@ -71,6 +75,7 @@ For pages that you don't want in git use a `private` folder with a
 
 ## Development Tools
 - [git](git.md)
+- [graphviz](graphviz.md)
 
 ## Markdown
 - [MediaWiki](MediaWiki.md)
@@ -79,5 +84,8 @@ For pages that you don't want in git use a `private` folder with a
 ## Microsoft Office
 - [Excel](Excel.md)
 - [Outlook](Outlook.md)
+
+## Miscellaneous
+- [Unicode](unicode.md)
 
 
