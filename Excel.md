@@ -19,9 +19,16 @@ Yes
 
 ## Shortcuts
 
-| To ...                      | Shortcut               | Works in Online Version              |
-|-----------------------------|------------------------|--------------------------------------|
-| select entire row           | \<SHIFT> + \<SPACE>    | Yes                                  | 
-| enter a cell using keyboard | \<CTRL> + \<ENTER>     | No                                   |
-| show/hide ribbon            | \<CTRL> + \<F1>        |                                      |
-| Insert table row above      | \<CTRL> + \<SHIFT> + = | Works online, not sure about desktop |
+| To ...                                           | Shortcut                     | Works in Online Version              |
+|--------------------------------------------------|------------------------------|--------------------------------------|
+| select entire row                                | \<SHIFT> + \<SPACE>          | Yes                                  | 
+| enter a cell using keyboard                      | \<CTRL> + \<ENTER>           | No                                   |
+| show/hide ribbon                                 | \<CTRL> + \<F1>              |                                      |
+| Insert table row above                           | \<CTRL> + \<SHIFT> + =       | Works online, not sure about desktop |
+| Select rows in column starting with current cell | \<CTRL> + \<SHIFT> + \<DOWN> | ?                                    |
+
+## Handy formulas
+
+| Formula                    | Description                         |
+|----------------------------|-------------------------------------|
+| `=DATEVALUE(LEFT(A1, 10))` | Extract date from '20226-02-26...'  |

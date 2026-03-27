@@ -4,14 +4,19 @@
 
 ## \ Shorthands
 
-| Shortcut      | Description              |
-|---------------|--------------------------|
-| `\c DATABASE` | `use` DATABASE           |
-| `\d TABLE`    | Describe TABLE           |
-| `\dt`         | List tables in database  |
-| `\du`         | List users on server     |
-| `\l`          | List databases in server |
-| `\q`          | Quit `psql`              |
+| Shortcut          | Description                                                                                                                                                                                      |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `\c DATABASE`     | `use` DATABASE                                                                                                                                                                                   |
+| `\d TABLE`        | Describe TABLE                                                                                                                                                                                   |
+| `\dt`             | List tables in database                                                                                                                                                                          |
+| `\du`             | List users on server.  Use `\du USER` for info on specific user.  **Note:** this will not indicate users with `LOGIN` permission, but will show `'Caanot Login'` for `NOLOGIN` users             |
+| `\du+`            | List users on server w/ description                                                                                                                                                              |
+| `\l`              | List databases in server                                                                                                                                                                         |
+| `\l+`             | List databases in server w/ Size, Tablespace, and Description                                                                                                                                    |
+| `\set u 'myuser'` | Set a `psql` variable (not be confused w/ other types of variables).  In these case, we're creating a variable `u` with a value of `'myuser'`.  To reference in SQL statement use `:u` or `:'u'` | 
+| `\q`              | Quit `psql`                                                                                                                                                                                      |
+| `\unset u`        | Unset `psql` variable  (not be confused w/ other types of variables) `u`                                                                                                                         |                                                                                                                                                                
+
 
 ## Determining version of PostgreSQL
 
@@ -84,6 +89,75 @@ Change ownership of everything in the database
 
 ## Manage Roles
 
+### Show User's Permissions
+
+These queries us a `u` psql variable.  Use `\set u 'myuser'` to set it.
+
+#### Show User's CONNECT, CREATE, and TEMP privileges on the server's databases 
+
+```postgresql
+ SELECT d.datname,
+       has_database_privilege(:'u', d.datname, 'CONNECT') AS connect,
+       has_database_privilege(:'u', d.datname, 'CREATE')  AS create_db_objs,
+       has_database_privilege(:'u', d.datname, 'TEMP')    AS temp
+FROM pg_database d
+ORDER BY d.datname;
+```
+
+#### Show user's USAGE and CREATE privileges on schemas
+
+```postgresql
+SELECT n.nspname AS schema,
+       has_schema_privilege(:'u', n.oid, 'USAGE')  AS usage,
+       has_schema_privilege(:'u', n.oid, 'CREATE') AS create
+FROM pg_namespace n
+WHERE n.nspname NOT LIKE 'pg_%'
+  AND n.nspname <> 'information_schema'
+ORDER BY n.nspname;
+```
+
+#### Role memberships (useful for inherited permissions.  i.e. roles comprised of other roles)
+
+```postgresql
+SELECT r.rolname AS member_of
+FROM pg_auth_members m
+JOIN pg_roles r ON r.oid = m.roleid
+JOIN pg_roles u ON u.oid = m.member
+WHERE u.rolname = :'u'
+ORDER BY r.rolname;
+```
+
+### Create a role/user
+
+```postgresql
+-- W/ password
+CREATE USER charles_xavier WITH PASSWORD 'MyotherCarI5Cerebro';
+
+-- Grant login ability (by default roles are created with LOGIN permission
+ALTER USER logan WITH LOGIN; 
+
+-- Revoke login
+ALTER USER logan WITH NOLOGIN;
+
+-- Grant CREATEDB
+ALTER USER charles_xavier WITH CREATEDB ;
+
+-- Grant all privileges on database
+GRANT ALL PRIVILEGES ON DATABASE school_for_gifted_db TO charles_xavier;
+```
+
+### Grant `SUPERUSER` permissions to a user
+
+`ALTER ROLE alice WITH SUPERUSER;`
+
 ### Change role password
 
 `ALTER ROLE super WITH PASSWORD 'secret123';`
+
+## psycopg2 Python Binding
+
+### Installing
+
+* You may encounter a "pg_config executable not found." error.  This can 
+be fixed by installing the `postgres-sever-dev` package for your version
+i.e. `sudo apt-get install postgresql-sever-dev-16`

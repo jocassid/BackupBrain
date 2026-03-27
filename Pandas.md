@@ -19,6 +19,13 @@ Reset option to default:
 | `max_rows`      | Max number of rows shown |
 | `max_colwidth`  | Max width or columns     |
 
+## Data Exploration operations
+
+| Example                           | Description                                                            |
+|-----------------------------------|------------------------------------------------------------------------|
+| `df[['col1', 'col2']].describe()` | Display stats (min, mean, std, etc.) for each of the specified columns |
+
+
 ## Filter Dataframes
 
 | Example                          | Description                                    |

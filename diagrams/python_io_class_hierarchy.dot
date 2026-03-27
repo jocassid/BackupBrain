@@ -1,0 +1,21 @@
+digraph python_io_class_hierarchy{
+  node[shape=rectangle];
+  edge[dir=back arrowtail=empty];
+
+  IOBase -> RawIOBase;
+  IOBase -> BufferedIOBase;
+  IOBase -> TextIOBase;
+
+  RawIOBase -> FileIO;
+
+  BufferedIOBase -> BufferedWriter;
+  BufferedIOBase -> BufferedReader;
+  BufferedIOBase -> BufferedRWPair;
+  BufferedIOBase -> BytesIO;
+
+  BufferedReader -> BufferedRandom;
+  BufferedWriter -> BufferedRandom;
+
+  TextIOBase -> TextIOWrapper;
+  TextIOBase -> StringIO;
+}

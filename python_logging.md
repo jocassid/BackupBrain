@@ -1,6 +1,6 @@
  [README.md](README.md)
 
-## Logging in Python
+## `logging` - Python Standard Library 
 
 * [Record Attributes](https://docs.python.org/3.8/library/logging.html#logrecord-attributes) - 
 How you specify the log format
