@@ -49,6 +49,7 @@ For pages that you don't want in git use a `private` folder with a
 ## Linux
 - [Alpine,ash,apk](Alpine.md)
 - [BASH](BASH.md)
+- [curl](curl.md)
 - [Docker](Docker.md)
 - [find](find.md)
 - [grep](grep.md)
@@ -56,10 +57,12 @@ For pages that you don't want in git use a `private` folder with a
 - [mail](linux_mail.md)
 - [openssl](openssl.md)
 - [ps](ps.md)
+- [Red Hat Enterprise Linux](RHEL.md)
 - [ssh/sftp](ssh_sftp.md)
 - [su/sudo](su_sudo.md)
 - [systemctl](systemctl.md)
 - [tar](tar.md)
+- [tmux](tmux.md)
 - [top](top.md)
 - [vim](vim.md)
 

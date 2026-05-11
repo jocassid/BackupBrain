@@ -14,22 +14,17 @@ To set environment value
 
 `$env:foo = 'bar'`
 
-### Generating hash of file
+## Linux Equivalents
 
-`Get-FileHash SOME_FILE`
+| Linux                      | PowerShell                                  |
+|----------------------------|---------------------------------------------|
+| `cat`                      | `Get-Content`, `Set-Content`, `Add-Content` |
+| `find`                     | `Get-ChildItem`                             |
+| `grep`                     | `Select-String`                             |
+| `md5sum`, `sha256sum`, etc | `Get-FileHash`                              |
 
-This will generate SHA256 by default.  To specify what type of hash to 
-generate, use the `-Algorithm` option. 
 
-`Get-FileHash -Algorithm MD5 SOME_FILE`
-
-Note: that there is only 1 hyphen in `Get-FileHash`
-
-### Search for a file
-
-`Get-Childitem –Path C:\ -Include *HSG* -File -Recurse -ErrorAction SilentlyContinue`
-
-### Equivalent to Unix `cat` command
+### `cat`
 
 Use Get-Content and pipe it into Set-Content or Add-Content.
 ```PowerShell
@@ -45,6 +40,51 @@ Get-Content file1.txt, file2.txt -Raw | Set-Content combined.txt
 # concatenation of files to stdout
 Get-Content file1.txt, file2.txt
 ```
+
+### `find`
+
+#### Search for a file
+`Get-Childitem –Path C:\ -Include *HSG* -File -Recurse -ErrorAction SilentlyContinue`
+
+### `grep`
+
+#### Determine if a file has at least 1 matching line
+```powershell
+$hasMatch = Select-String -Path "C:\temp\app.log" -Pattern "ERROR 500" -Quiet
+if ($hasMatch) { "Found" } else { "Not found" }
+```
+Notes:
+
+-Pattern is regex by default.
+For plain text matching (not regex), use -SimpleMatch:
+Select-String -Path "C:\temp\app.log" -Pattern "ERROR 500" -SimpleMatch -Quiet
+If you want exact whole-line match, use anchors:
+
+Select-String -Path "C:\temp\app.log" -Pattern "^ERROR 500$" -Quiet
+
+
+
+## Cmdlets
+
+### `Get-FileHash`
+
+Note: that there is only 1 hyphen in `Get-FileHash`
+
+| Command                                 | Descriptions                                   |
+|-----------------------------------------|------------------------------------------------|
+| `Get-FileHash SOME_FILE`                | `Get-FileHash` will generate SHA256 by default |
+| `Get-FileHash -Algorithm MD5 SOME_FILE` | Generate MD5 of SOME_FILE                      |
+
+
+
+
+
+
+
+
+
+
+
 
 ## Cmdlets of Note
 

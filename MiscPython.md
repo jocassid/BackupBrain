@@ -46,3 +46,11 @@ def get_line_number():
     cf = currentframe()
     return cf.f_back.f_lineno
 ```
+
+## Determine the OS python is running under
+
+|         | `os.name` | `sys.platform` |
+|---------|-----------|----------------|
+| Linux   | `'posix'` | `'linux'`      |
+| Mac     |           | `'darwin'`     |
+| Windows | `'nt'`    | `'win32'`      |

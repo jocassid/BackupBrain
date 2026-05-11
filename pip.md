@@ -1,17 +1,21 @@
 [README.md](README.md)
 
-# Installing Packages
+# pip
 
-## Install from a git repo
+## Installing Packages
 
-### Install branch via git and https
+### Install from a git repo
+
+#### Install branch via git and https
 
 `pip install git+https://github.com/user/repo.git@branch`
 
-### Install branch via git and ssh
+#### Install branch via git and ssh
 
 `pip install git+ssh://github.com/user/repo.git@branch`
 
 
+#### Bypass SSL Certificate Validation
 
+`pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org -r requirements.txt`
 
