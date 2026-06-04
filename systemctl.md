@@ -38,3 +38,31 @@ Article on how to start, stop, and restart services
 https://phoenixnap.com/kb/start-stop-restart-linux-services
 
 `sudo systemctl stop postgresql@12-main.service`
+
+---
+
+Examples From https://www.samnet.dev/learn/linux/systemd-guide/
+
+### Start a service
+sudo systemctl start nginx
+
+### Stop a service
+sudo systemctl stop nginx
+
+### Restart (stop then start)
+sudo systemctl restart nginx
+
+### Reload config without restarting (if supported)
+sudo systemctl reload nginx
+
+### Check status
+systemctl status nginx
+
+### Enable (start on boot)
+sudo systemctl enable nginx
+
+### Disable (don't start on boot)
+sudo systemctl disable nginx
+
+### Enable and start in one command
+sudo systemctl enable --now nginx

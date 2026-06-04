@@ -17,6 +17,21 @@
 | `\q`              | Quit `psql`                                                                                                                                                                                      |
 | `\unset u`        | Unset `psql` variable  (not be confused w/ other types of variables) `u`                                                                                                                         |                                                                                                                                                                
 
+## `psql`
+
+### To login as a specific user
+
+`psql -U USERNAME -d DATABASE`
+
+* This will log into a local PostgreSQL server.  Add a `-h HOSTNAME_OR_IP` 
+option if you need to connect to a different server.
+* `psql` will prompt `Password for user USERNAME`
+* If the USERNAME is the same as the database name you can omit the 
+`-d DATABASE` option (i.e. `psql -U postgres`)
+
+### Run a .sql  Script
+
+`psql -d DATABASE -f my_script.sql`
 
 ## Determining version of PostgreSQL
 
