@@ -29,6 +29,10 @@ option if you need to connect to a different server.
 * If the USERNAME is the same as the database name you can omit the 
 `-d DATABASE` option (i.e. `psql -U postgres`)
 
+### Run a .sql  Script
+
+`psql -d DATABASE -f my_script.sql`
+
 ## Determining version of PostgreSQL
 
 From shell:

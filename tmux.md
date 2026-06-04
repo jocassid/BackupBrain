@@ -18,34 +18,24 @@ more compact format.  I also list commands based on how often I use them
 
 ## Window Commands
 
-| Command        | Description                 |
-|----------------|-----------------------------|
-| `<Ctrl+b> c`   | Create new window           |
-| `<Ctrl+b> w`   | Interactive window selector |
-| `<Ctrl+b> n`   | Next window                 |
-| `<Ctrl+b> p`   | Previous window             |
-| `<Ctrl+b> l`   | Toggle last window          |
-Ctrl+b [0-9]
-
-Switch to window by number
-Ctrl+b ,
-
-Rename window
-Ctrl+b &
-
-Kill window (with confirmation)
+| Command          | Description                     |
+|------------------|---------------------------------|
+| `<Ctrl+b> c`     | Create new window               |
+| `<Ctrl+b> w`     | Interactive window selector     |
+| `<Ctrl+b> n`     | Next window                     |
+| `<Ctrl+b> p`     | Previous window                 |
+| `<Ctrl+b> l`     | Toggle last window              |
+| `<Ctrl+b> [0-9]` | Switch to window by number      |
+| `<Ctrl+b> ,`     | Rename window                   |
+| `<Ctrl+b> &`     | Kill window (with confirmation) |
 
 ## Pane Management
 
-| Command                 | Description                  |
-|-------------------------|------------------------------|
-Ctrl+b %
-
-Split pane horizontally (left/right)
-Ctrl+b "
-
-Split pane vertically (top/bottom)
-Ctrl+b ←↑→↓
+| Command      | Description                          |
+|--------------|--------------------------------------|
+| `Ctrl+b %`   | Split pane horizontally (left/right) |
+| `Ctrl+b "`   | Split pane vertically (top/bottom)   |
+| `Ctrl+b ←↑→↓
 
 Navigate between panes
 Ctrl+b o

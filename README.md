@@ -65,12 +65,16 @@ For pages that you don't want in git use a `private` folder with a
 - [tmux](tmux.md)
 - [top](top.md)
 - [vim](vim.md)
+- [Managing Users and Groups](linux_managing_users_and_groups.md)
 
+## AI
+- [Codex](Codex.md)
 
 ## Windows
 - [Windows](Windows.md)
 - [Networking](windows_networking.md)
 - [PowerShell](PowerShell.md)
+- [Windows Terminal](WindowsTerminal.md)
 - [winget](winget.md)
 
 ## Databases
