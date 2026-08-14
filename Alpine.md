@@ -2,6 +2,17 @@
 
 # Alpine, ash, apk
 
+## Alpine
+
+### services
+
+Alpine uses `rc-service` to manage services. However, the "slim" versions of 
+Alpine do not include `rc-service` or even an init system 
+(which rc-service requires).
+
+The Docker way of doing things splits services onto separate containers with 
+Docker ensuring that those containers are running.
+
 ## ash
 
 * supposedly you can run a command from history via `!42` (or whatever the 

@@ -47,10 +47,8 @@ For pages that you don't want in git use a `private` folder with a
 - [HTMX](HTMX.md)
 
 ## Linux
-- [Alpine,ash,apk](Alpine.md)
 - [BASH](BASH.md)
 - [curl](curl.md)
-- [Docker](Docker.md)
 - [find](find.md)
 - [grep](grep.md)
 - [logs](linux_logs.md)
@@ -66,6 +64,10 @@ For pages that you don't want in git use a `private` folder with a
 - [top](top.md)
 - [vim](vim.md)
 - [Managing Users and Groups](linux_managing_users_and_groups.md)
+
+## Docker
+- [Alpine,ash,apk](Alpine.md)
+- [Docker Commands](Docker_commands.md)
 
 ## AI
 - [Codex](Codex.md)
