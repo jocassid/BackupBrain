@@ -18,6 +18,14 @@ a[href*="github.com"]{}   /* href attributes contains github.com */
 a[href$=".org"]{}         /* href ends-with .org.  NOT case-sensitive */ 
 a[class~="logo"]{}        /* class contains word logo */
 ```
+## Combinators
+
+| Type               | Example   | Description                                                                               |
+|--------------------|-----------|-------------------------------------------------------------------------------------------|
+| Descendant         | `div ul`  | ul that is the descendant of a div.  ul might be a number of levels of nesting within div |
+| Child              | `ul > li` | li that is the child of ul (only 1 level down)                                            |
+| Next-Sibling       | `img + p` | Paragraphs right after an image                                                           |
+| Subsequent-sibling | `img ~ p` | All sibling paragraphs after an image                                                     |
 
 ## `:nth-of-type` and other Tree-structured psuedo-classes
 
@@ -77,7 +85,7 @@ grid-row: 1 / 3; /* 1 <= row < 3 */
 column-gap: 10px;
 row-gap: 1em;
 gap: 1rem;
-grid-area: [ROW_START] [COL_START] [ROW_END] [COL_END]
+grid-area: [ROW_START] [COL_START] [ROW_END] [COL_END]  /* think top-left to bottom-right */
 ```
 
 ## Flexbox Layout Cheat Sheet

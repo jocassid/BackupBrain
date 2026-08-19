@@ -12,9 +12,25 @@
 
 ## Operators
 
-| Operator | Description                                                                                                                                                |
-|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `...`    | Known as "Spread Syntax".  Expands an iterable.  Works in a way similar how `*args` is expanded to call `bar` in to `def foo(*args): bar(*args)` in Python |
+### `...`
+
+Known as "Spread Syntax".  Expands an iterable.  Works in a way similar how 
+`*args` is expanded to call `bar` in to `def foo(*args): bar(*args)` in Python
+
+```JavaScript
+>> foo = {a: 'alpha', b: 'bravo'}
+Object { a: "alpha", b: "bravo" }
+
+>> bar = { ... foo }
+Object { a: "alpha", b: "bravo" }
+
+>> bar = { ...foo, c: 'charlie' }
+Object { a: "alpha", b: "bravo", c: "charlie" }
+```
+
+### `??`
+
+### `!!`
 
 
 ## Truthiness WTFs
@@ -39,6 +55,14 @@ function py_bool(value){
 }
 ```
 
+## Equivalents to Python built-in functions
+
+| Python built-in      | JavaScript                                       | Notes |
+|----------------------|--------------------------------------------------|-------|
+| `all([True, False])` | `[true, false].every((value) => Boolean(value))` |       |
+| `any([True, False])` | `[true, false].some((value) => Boolean(value))`  |       |
+
+
 
 ## String Methods
 
@@ -46,7 +70,8 @@ function py_bool(value){
 |---------------------|---------------------|---------------------------------------------------------------------|
 | `t[3]`              | `t.charAt(3)`       | Doesn't support negative indices                                    |
 | `t[-1]`             | `t.at(-1)`          | Like charAt, but supports negative indices                          |
-| `t.lower()`         | `t.toLowerCase()`   |
+| `t[1:3]`            | `t.substring(1, 3)` | String.substr is deprecated                                         |
+| `t.lower()`         | `t.toLowerCase()`   |                                                                     |
 | `t.endswith('foo')` | `t.endsWith('foo')` |                                                                     |  
 | `'foo' in t`        | `t.includes('foo')` |                                                                     |
 | `"".join([1,2,3])`  | `[1,2,3].join('')`  | If no argument is passed to Array.join, values are joined by commas |
@@ -100,11 +125,42 @@ b = new Set([2, 3]);
 
 ## Comprehension Equivalents
 
-| Type   | Python                     | JavaScript                                    | Notes                                     |
-|--------|----------------------------|-----------------------------------------------|-------------------------------------------|
-| Object | `{k: v for k, v in pairs}` | `Object.fromEntries(iterableOfKeyValuePairs)` |                                           |
-| Array  | `[i for i in iterable]`    | `Array.from(iterable)`                        | Has mapFn and thisArg optional parameters |
-| Set    | `{i for i in iterable}`    | `new Set(iterable)`                           |                                           |
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Python</th>
+      <th>JavaScript</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Object</td>
+      <td><code>{k: v for k, v in pairs}</code></td>
+      <td><code>Object.fromEntries(iterableOfKeyValuePairs)</code></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Array</td>
+      <td><code>[i for i in iterable]</code></td>
+      <td><code>Array.from(iterable)</code></td>
+      <td>Has mapFn and thisArg optional parameters</td>
+    </tr>
+    <tr>
+      <td><code>[d.id for d in dictionaries]</code></td>
+      <td><code>dictionaries.map((d) => d.id)</code></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Set</td>
+      <td><code>{i for i in iterable}</code></td>
+      <td><code>new Set(iterable)</code></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 ## Dates and Times

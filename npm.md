@@ -12,13 +12,24 @@ List all installed packages and their dependencies
 
 `npm ls --all`
 
+## Install packages
+
+### Useful Options
+
+| Option               | Description                   |
+|----------------------|-------------------------------|
+| `--verbose`          | Verbose output                |
+| `--strict-ssl=false` | Disable strict SSL/TLS checks | 
+
+### Create package-lock.json
+
+Running `npm install` will create/update package-lock.json
+
 ## Upgrade Packages
 
 `npm update PACKAGE_NAME`
 
-## Create package-lock.json
 
-Running `npm install` will create/update package-lock.json
 
 ## Uninstall Package
 
