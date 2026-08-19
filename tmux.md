@@ -31,49 +31,25 @@ more compact format.  I also list commands based on how often I use them
 
 ## Pane Management
 
-| Command      | Description                          |
-|--------------|--------------------------------------|
-| `Ctrl+b %`   | Split pane horizontally (left/right) |
-| `Ctrl+b "`   | Split pane vertically (top/bottom)   |
-| `Ctrl+b ←↑→↓
-
-Navigate between panes
-Ctrl+b o
-
-Cycle through panes
-Ctrl+b ;
-
-Jump to last active pane
-Ctrl+b q
-
-Show pane numbers (type to jump)
-Ctrl+b z
-
-Zoom pane (toggle fullscreen)
-Ctrl+b Space
-
-Cycle through layouts
-Ctrl+b Ctrl+←→↑↓
-
-Resize pane by 1 cell
-Ctrl+b x
-
-Kill current pane
+| Command                  | Description                          |
+|--------------------------|--------------------------------------|
+| `<Ctrl+b> %`             | Split pane horizontally (left/right) |
+| `<Ctrl+b> "`             | Split pane vertically (top/bottom)   |
+| `<Ctrl+b> ←↑→↓`          | Navigate between panes               |
+| `<Ctrl+b> o`             | Cycle through panes                  |
+| `<Ctrl+b> ;`             | Jump to last active pane             |
+| `<Ctrl+b> q`             | Show pane numbers (type to jump)     |
+| `<Ctrl+b> z`             | Zoom pane (toggle fullscreen)        |
+| `<Ctrl+b> Space`         | Cycle through layouts                |
+| `<Ctrl+b> <Ctrl + ←→↑↓>` | Resize pane by 1 cell                |
+| `<Ctrl+b> x`             | Kill current pane                    |
 
 ## General Commands
 
-| Command                 | Description                  |
-|-------------------------|------------------------------|
-Ctrl+b ?
-
-List all key bindings
-Ctrl+b :
-
-Enter command mode
-Ctrl+b t
-
-Show clock
-Ctrl+b ~
-
-Show message history
+| Command        | Description            |
+|----------------|------------------------|
+| `<Ctrl+b> ?`   | List all key bindings  |
+| `<Ctrl+b> :`   | Enter command mode     |
+| `<Ctrl+b> t`   | Show clock             |
+| `<Ctrl+b> ~`   | Show message history   |
 

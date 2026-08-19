@@ -8,6 +8,10 @@
 
 ## Using PowerShell
 
+### Determine PowerShell Version
+
+`$PSVersionTable`
+
 ### Get/Set Environment Variable
 
 To get an environment value
@@ -27,6 +31,7 @@ To set environment value
 | `grep`                     | `Select-String`                             |
 | `md5sum`, `sha256sum`, etc | `Get-FileHash`                              |
 | `time`                     | `Measure-Command`                           |
+| `touch`                    | `New-Item`                                  |
 
 
 ### `cat`
@@ -86,20 +91,27 @@ TotalSeconds      : 0.0015426
 TotalMilliseconds : 1.5426
 ```
 
-
 ```PowerShell
 PS C:\Users\jocassid> (Measure-Command { Write-Host "foo" }).TotalSeconds
 foo
 0.0015412
 ```
 
+### `touch`
+
+Creating a new file
+
+```PowerShell
+New-Item path\to\file.txt -ItemType File
+```
+
+
 ## Cmdlets of Note
 
-| Cmdlet                                                           | Description                                               |
-|------------------------------------------------------------------|-----------------------------------------------------------|
-| [Get-CimInstance](https://learn.microsoft.com/en-us/powershell/module/cimcmdlets/get-ciminstance?view=powershell-5.1) | Get Common Information Model on processes, services, etc. |
-| [
-| [Select-String](https://go.microsoft.com/fwlink/?LinkID=113388)  | Search for strings within file(s)                         |
+| Cmdlet                                                                                                                 | Description                                               |
+|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| [Get-CimInstance](https://learn.microsoft.com/en-us/powershell/module/cimcmdlets/get-ciminstance?view=powershell-5.1)  | Get Common Information Model on processes, services, etc. |
+| [Select-String](https://go.microsoft.com/fwlink/?LinkID=113388)                                                        | Search for strings within file(s)                         |
 
 
 ## Cmdlets
@@ -145,7 +157,14 @@ Note: that there is only 1 hyphen in `Get-FileHash`
 | `Get-FileHash SOME_FILE`                | `Get-FileHash` will generate SHA256 by default |
 | `Get-FileHash -Algorithm MD5 SOME_FILE` | Generate MD5 of SOME_FILE                      |
 
+### `Get-LocalGroupMember`
+
+`Get-LocalGroupMember -Group "Administrators"`
+
+
 ### `Get-Process`
+
+If you need full command line, you'll need to use `Get-CimInstance` instead
 
 
 

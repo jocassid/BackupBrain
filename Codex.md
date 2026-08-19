@@ -4,7 +4,7 @@
 
 ## 30 Minutes o' AI
 
-I was watching https://www.youtube.com/watch?v=px7XlbYgk7I and left at the 28:30 mark
+I was watching https://www.youtube.com/watch?v=px7XlbYgk7I and left at the 32:00 mark
 
 ## Slash commands
 
@@ -37,10 +37,15 @@ Task-specific routines and documentation are contained in ./agents.docs/
 
 * `~/.codex/config.toml`
 
+## Prompting
+
+* use @mentions to refer to parts of codebase
+* .codex/prompts/my-command.md - to create a command
 
 ## Additional Info
 
 * https://agents.md - Information on Agents.md
+* https://agentskills.io - Information on building skills.
 * https://developers.openai.com/cookbook/articles/codex_exec_plans
 * https://github.com/openai/codex/blob/main/docs/config.md#config-reference
 * https://developers.openai.com/codex/prompting/

@@ -7,6 +7,13 @@
 `RelatedObjectDoesNotExist` - This class is built on the fly, but is a 
 subclass of `AttributeError`
 
+## Referencing items in App
+
+| Item       | Expression                 |
+|------------|----------------------------|
+| URL name   | `'my_app:url_name'`        |
+| Permission | `'my_app.can_add_widgets'` |
+| Model      | `'my_app.MyModel'`         | 
 
 ## Field Lookups
 
