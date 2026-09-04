@@ -21,7 +21,7 @@ Docker ensuring that those containers are running.
 
 ## apk
 
-* It's not install it's `apk add PACKAGE_NAME`
+* It's not `apk install` it's `apk add PACKAGE_NAME`
 
 Frequently? installed package:
 
